@@ -12,7 +12,7 @@
                         type="text" 
                         required
                         class="form-input"
-                        placeholder="Ex: iPhone 14 Pro"
+                        placeholder="Ex: iPhone 16 Pro"
                     />
                 </div>
                 
