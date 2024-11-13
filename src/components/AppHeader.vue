@@ -1,15 +1,20 @@
 <template>
-    <header class="bg-gray-800 text-white p-4">
-        <nav class="flex justify-between">
-            <router-link to="/" class="text-lg font-bold">Loja Apple</router-link>
-            <div class="flex space-x-4">
-                <router-link to="/add-item" class="hover:text-gray-300">Cadastrar Novo produto da Apple</router-link>
-                <router-link to="/items" class="hover:text-gray-300">Listar produtos da Apple</router-link>
+    <header class="header">
+        <nav class="nav">
+            <router-link to="/" class="logo">
+                Loja Apple
+            </router-link>
+            <div class="nav-links">
+                <router-link to="/add-item" class="nav-link">
+                    Cadastrar Produtos
+                </router-link>
+                <router-link to="/items" class="nav-link">
+                    Listar Produtos
+                </router-link>
             </div>
         </nav>
     </header>
 </template>
-
 
 <script>
 export default {
@@ -18,5 +23,49 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos para o cabeçalho */
+/* Header background and styling */
+.header {
+    padding: 16px 0;
+}
+
+/* Navigation container */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100vw;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Individual link styling */
+.nav-link {
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #9ca3af;
+}
 </style>

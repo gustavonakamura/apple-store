@@ -1,6 +1,12 @@
 <template>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        <ItemCard v-for="(item, index) in items" :key="index" :item="item" :index="index" @delete-item="deleteItem" />
+    <div class="item-grid">
+        <ItemCard 
+            v-for="(item, index) in items" 
+            :key="index" 
+            :item="item || {}" 
+            :index="index" 
+            @delete-item="deleteItem" 
+        />
     </div>
 </template>
 
@@ -10,7 +16,12 @@ import ItemCard from './ItemCard.vue';
 export default {
     name: "ItemList",
     components: { ItemCard },
-    props: ["items"],
+    props: {
+        items: {
+            type: Array,
+            default: () => [] // Default to an empty array if items is not provided
+        }
+    },
     methods: {
         deleteItem(index) {
             this.$emit("delete-item", index);
@@ -18,7 +29,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-/* Estilos para a lista */
-</style>
