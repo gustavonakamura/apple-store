@@ -2,7 +2,6 @@
     <div class="container">
         <div class="form-card">
             <h1 class="form-title">Adicionar Novo Produto da Apple</h1>
-            
             <form @submit.prevent="addItem" class="form">
                 
                 <div class="form-group">
@@ -69,7 +68,6 @@ export default {
 </script>
 
 <style scoped>
-/* Container to center the form */
 .container {
     min-height: 100vh;
     display: flex;
@@ -78,8 +76,6 @@ export default {
     background-color: #f3f4f6;
     padding: 20px;
 }
-
-/* Form card styling */
 .form-card {
     width: 100%;
     max-width: 500px;
@@ -88,8 +84,6 @@ export default {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
-/* Form title */
 .form-title {
     font-size: 24px;
     font-weight: 700;
@@ -97,13 +91,9 @@ export default {
     color: #333333;
     margin-bottom: 20px;
 }
-
-/* Form group layout */
 .form-group {
     margin-bottom: 16px;
 }
-
-/* Form labels */
 .form-label {
     display: block;
     font-size: 16px;
@@ -111,8 +101,6 @@ export default {
     color: #555555;
     margin-bottom: 8px;
 }
-
-/* Form inputs */
 .form-input {
     width: 100%;
     padding: 10px;
@@ -123,14 +111,10 @@ export default {
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
-
-/* Input focus effect */
 .form-input:focus {
     border-color: #3b82f6;
     outline: none;
 }
-
-/* Submit button */
 .form-button {
     width: 100%;
     padding: 12px;
@@ -143,8 +127,6 @@ export default {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-/* Button hover and active effects */
 .form-button:hover {
     background-color: #2563eb;
 }

@@ -12,14 +12,13 @@
 
 <script>
 import ItemCard from './ItemCard.vue';
-
 export default {
     name: "ItemList",
     components: { ItemCard },
     props: {
         items: {
             type: Array,
-            default: () => [] // Default to an empty array if items is not provided
+            default: () => []
         }
     },
     methods: {

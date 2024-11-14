@@ -23,12 +23,9 @@ export default {
 </script>
 
 <style scoped>
-/* Header background and styling */
 .header {
     padding: 16px 0;
 }
-
-/* Navigation container */
 .nav {
     display: flex;
     align-items: center;
@@ -38,8 +35,6 @@ export default {
     padding: 0 24px;
     width: 100vw;
 }
-
-/* Logo styling */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -48,23 +43,16 @@ export default {
     transition: color 0.3s ease;
     text-decoration: none;
 }
-
-
-/* Navigation links container */
 .nav-links {
     display: flex;
     gap: 24px;
 }
-
-/* Individual link styling */
 .nav-link {
     font-size: 1.125rem;
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 8px 12px;
 }
-
-/* Hover effect for navigation links */
 .nav-link:hover {
     color: #9ca3af;
 }

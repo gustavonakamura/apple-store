@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style scoped>
-/* Card styling */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -35,10 +34,6 @@ export default {
     justify-content: space-between;
     min-height: 50px;
 }
-
-
-
-/* Card title styling */
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,16 +41,12 @@ export default {
     margin-bottom: 8px;
     text-align: center;
 }
-
-/* Card description styling */
 .card-description {
     font-size: 1rem;
     color: #666666;
     margin-bottom: 12px;
     text-align: center;
 }
-
-/* Card price styling */
 .card-price {
     font-size: 1.25rem;
     font-weight: bold;
@@ -63,8 +54,6 @@ export default {
     margin: 16px 0;
     text-align: center;
 }
-
-/* Button styling */
 .card-button {
     background-color: #e53e3e;
     color: #ffffff;
@@ -76,12 +65,9 @@ export default {
     transition: background-color 0.3s ease, transform 0.3s ease;
     align-self: center;
 }
-
-/* Hover and active effect for button */
 .card-button:hover {
     background-color: #c53030;
 }
-
 .card-button:active {
     transform: scale(0.98);
 }

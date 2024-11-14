@@ -11,5 +11,4 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos para o rodapé */
 </style>
